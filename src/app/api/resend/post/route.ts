@@ -95,7 +95,7 @@ export async function POST(request: NextRequest) {
       const user = Array.isArray(userArray) ? userArray[0] : userArray;
 
       if (!user) continue;
-
+ 
       const groupKey = String(user.id_user);
 
       if (!usersToEmail[groupKey]) {
